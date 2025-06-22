@@ -20,4 +20,4 @@ pode_ir(A, B, D) :- ligacao(B, A, D).
 
 cidade_inicial(atlanta).
 
-cidade_final(saopaulo).
+cidade_final(miami).
