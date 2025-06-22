@@ -1,0 +1,23 @@
+ligacao(atlanta, charlotte, 240).
+ligacao(charlotte, cincinnati, 475).
+ligacao(cincinnati, philadelphia, 700).
+ligacao(philadelphia, newyorknj, 95).
+ligacao(newyorknj, washingtondc, 225).
+ligacao(washingtondc, miami, 1075).
+ligacao(miami, orlando, 230).
+ligacao(orlando, nashville, 775).
+ligacao(nashville, cincinnati, 385).
+ligacao(atlanta, nashville, 250).
+ligacao(charlotte, newyorknj, 650).
+ligacao(losangeles, seattle, 1135).
+ligacao(losangeles, miami, 2735).
+ligacao(seattle, cincinnati, 2010).
+ligacao(newyorknj, philadelphia, 95).
+
+
+pode_ir(A, B, D) :- ligacao(A, B, D).
+pode_ir(A, B, D) :- ligacao(B, A, D).
+
+cidade_inicial(atlanta).
+
+cidade_final(saopaulo).

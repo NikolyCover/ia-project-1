@@ -6,12 +6,12 @@ exibir_caminhos([], _).
 exibir_caminhos([[Caminho, Distancia]|Resto], 1) :-
     format('\nCaminho 1 (Menor caminho):~n'),
     exibir_rota(Caminho),
-    format('Distância total: ~w milhas~n~n', [Distancia]),
+    format('Distancia total: ~w milhas~n~n', [Distancia]),
     exibir_caminhos(Resto, 2).
 exibir_caminhos([[Caminho, Distancia]|Resto], N) :-
     format('Caminho ~w:~n', [N]),
     exibir_rota(Caminho),
-    format('Distância total: ~w milhas~n~n', [Distancia]),
+    format('Distancia total: ~w milhas~n~n', [Distancia]),
     N1 is N + 1,
     exibir_caminhos(Resto, N1).
 
