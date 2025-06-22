@@ -19,6 +19,7 @@ exibir_caminhos(Lista) :-
 %  @param Lista  Lista de caminhos a serem exibidos.
 %  @param Indice Índice atual da exibição.
 exibir_caminhos([], _).
+
 exibir_caminhos([[Caminho, Distancia]|Resto], 1) :-
     format('\nCaminho 1 (Menor caminho):~n'),
     exibir_rota(Caminho),
