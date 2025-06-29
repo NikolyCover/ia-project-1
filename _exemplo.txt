@@ -14,10 +14,6 @@ ligacao(losangeles, miami, 2735).
 ligacao(seattle, cincinnati, 2010).
 ligacao(newyorknj, philadelphia, 95).
 
-
-pode_ir(A, B, D) :- ligacao(A, B, D).
-pode_ir(A, B, D) :- ligacao(B, A, D).
-
 cidade_inicial(atlanta).
 
 cidade_final(miami).
